@@ -562,8 +562,6 @@ rfor_validate_rwa <- sits_kfold_validate(
 rfor_validate_rwa
 ```
 
-
-
 ### Combine crop types into groups
 
 African agriculture is often characterised by great diversity of crop types and varieties, and heterogeneity of crop types and farming practices in space. This can make mapping exercises more challenging than in more uniform and homogenous agricultural landscapes with large field sizes. Sometimes, the large number of crop types can mean that an aggregated approach can produce more useful outputs. In this case, crop classes are combined into their 'crop groups' based on the Indicative Crop Classification (ICC) developed by FAO in the [guidelines for agricultural censuses](https://www.fao.org/4/a0135e/a0135e00.htm). This approach is also adopted in the Joint Assessment for Crop Assessment and Monitoring [guidelines for cropland and crop type definition and field data collection](https://jecam.org/wp-content/uploads/2018/10/JECAM_Guidelines_for_Field_Data_Collection_v1_0.pdf) [@Defourny2014].
@@ -608,8 +606,6 @@ balanced_samples_comb <- sits_reduce_imbalance(
 # Show summary of balanced samples
 summary(balanced_samples_comb)
 ```
-
-
 
 ### Perform a cross-validation on crop groups
 
@@ -700,15 +696,8 @@ plot(crop_class, legend_position="outside")
 knitr::include_graphics("./images/ct_digital_earth_africa/classifymap.png")
 ```
 
-
 ## Conclusions
 
 This chapter has presented a workflow which draws on open access data sources to produce a crop type and crop group map for an area of Rwanda. The workflow showcases how GeoMAD composite images can be a useful data source and produce reasonably accurate classifications, considering unbalanced training data and a challenging agricultural landscape characterised by heterogeneity and small fields. In this context, the workflow is representative of real-world crop type mapping challenges. However, this workflow should be considered as an introduction and starting point for development of more refined agricultural mapping. The accuracy of the classification could be improved by further refinement of training samples and the introduction of more predictor variables in the classification models. Furthermore, post-processing, such as spatial smoothing or object-based image analysis—may also enhance map quality by reducing noise and improving thematic coherence, including in the cropland extent map.
-
-About the author{-}
-
-Dr Michael Wellington is an Earth Observation Scientist at Digital Earth Africa, employed by Geoscience Australia. He works on scientific and platform initiatives to ensure users can adopt and apply Earth Observation technology for their own purposes through Digital Earth Africa. Michael has a PhD in remote sensing of irrigated agriculture in Africa. 
-
-Dr Lisa-Maria Rebelo is Lead Scientist at Digital Earth Africa where she provides leadership and strategic guidance for the scientific and technical operations of the DE Africa program including deep knowledge and expertise on the development, evaluation and use of earth observations and geospatial data across the African continent.
 
 ## References{-}
